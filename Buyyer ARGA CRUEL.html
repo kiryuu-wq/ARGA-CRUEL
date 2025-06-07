@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARGA CRUEL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('https://img1.pixhost.to/images/6310/608218327_imgtmp.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+    header {
+      background-color: #0984e3;
+      color: white;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: 600;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    button.copy-btn {
+      background-color: #00cec9;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button.copy-btn:hover {
+      background-color: #00b894;
+    }
+    iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+    a.social-link {
+      display: block;
+      margin: 0.5rem 0;
+      color: #2d3436;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a.social-link:hover {
+      color: #0984e3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    ARGA CRUEL
+  </header>
+
+  <div class="container">
+
+    <iframe src="https://youtube.com/embed/0GVExpdmoDs" allowfullscreen></iframe>
+
+    <div class="card">
+      <h3>Dana</h3>
+      <p id="dana">087832435504</p>
+      <button class="copy-btn" onclick="copyText('dana')">Salin Dana</button>
+    </div>
+
+    <div class="card">
+      <h3>QRIS (Link)</h3>
+      <a href="https://img1.pixhost.to/images/6310/608217658_imgtmp.jpg" target="_blank">Lihat QRIS</a>
+    </div>
+
+    <div class="card">
+      <h3>Kontak & Sosial Media</h3>
+      <a class="social-link" href="https://wa.me/6287832435504" target="_blank">📱 WhatsApp: 087832435504</a>
+      
+    </div>
+
+  </div>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Disalin: ' + text);
+      });
+    }
+  </script>
+
+</body>
+</html>
